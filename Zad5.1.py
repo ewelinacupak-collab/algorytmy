@@ -60,7 +60,9 @@ class LinkedList:
         else:
             ogon.next = p2
 
-        return dummy.next
+        nowy_pociag = LinkedList()
+        nowy_pociag.head = dummy.next
+        return nowy_pociag
 
 if __name__ == "__main__":
 
@@ -72,8 +74,5 @@ if __name__ == "__main__":
     for x in [2, 4, 6, 8]:
         b.append(x)
 
-    head_wynikowy = a.merge(a, b)
-    wynik = LinkedList()
-    wynik.head = head_wynikowy
-
+    wynik = a.merge(b)
     wynik.display()
