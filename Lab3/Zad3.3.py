@@ -20,6 +20,8 @@ def symulacja(lista_uczestnikow, liczba_operacji):
     zwyciezca = kolejka.popleft()
     print("Zwycięzcą zostaje: ", zwyciezca)
 
+    return zwyciezca 
+
 lista_uczestnikow = ["Adam", "Ola", "Kasia", "Julia"]
 liczba_operacji = 3
 
